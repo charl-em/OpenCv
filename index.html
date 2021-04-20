@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="Css/design.css">
+    <title>Veille : OpenCv</title>
+</head>
+<body>
+    <div class="w3-container">
+        <div id="titre_central"><h1 class=" w3-text-red" style="text-shadow:1px 1px 0 #444"><b>OpenCV : La librairie graphique libre pour le traitement d'images</b></h1></div>
+    </div>
+    <div class="w3-half w3-container">
+        <img src="Css/Imgs/opencv.png" style="height: auto !important; width: 100%;">    
+</div>
+<div class="w3-half w3-container">
+    <p style="text-shadow:1px 1px 0 #444">Qu'est-ce que OpenCv ?</p>
+    <p>Initialement développée par Intel, OpenCV (Open Computer Vision) est une bibliothèque graphique. Elle est spécialisée dans le traitement d’images, que ce soit pour de la photo ou de la vidéo.<br>
+        Initialement développée par Intel, OpenCV (Open Computer Vision) est une bibliothèque graphique. Elle est spécialisée dans le traitement d’images, que ce soit pour de la photo ou de la vidéo.<br>
+        Sous licence BSD (Berkeley Software Distribution Licence), OpenCV peut être réutilisé librement, en tout ou partie, pour être intégré au sein d’un autre projet.<br>
+        C’est notament cette notion qui fait qu’OpenCV est très populaire et à la base de nombreux logiciels de traitements d’images/vidéos. Elle est aujourd’hui développée, maintenue, documentée et utilisée par une communauté de plus de 40 000 membres actifs !
+    </p>
+</div>
+<div class="w3-container">
+    <ol type="I">
+        <li style="text-shadow:1px 1px 0 #444">Fonctionnement d’OpenCv</li>
+        <p>Pour comprendre le fonctionnement d’OpenCV, il faut d’abord définir ce qu’est la vision par ordinateur. Branche de l’IA, la vision par ordinateur a pour principal but de permettre à une machine d’analyser, traiter et comprendre des images prises par un système (une caméra par exemple)<br>
+            OpenCV fournit un ensemble de plus de 2500 algorithmes de vision par ordinateur, accessibles au travers d’API. Ce qui permet d’effectuer tout un tas de traitements sur des images (extraction de couleurs, détection de visages, de formes, application de filtres,…). Ces algorithmes se basent principalement sur des calculs mathématiques complexes, concernant surtout les traitements sur les matrices (car une image peut être considérée comme une matrice de pixels).
+        </p><hr>
+        <li style="text-shadow:1px 1px 0 #444">Comment se passe les traitements d’images</li>
+        <p>Les algorithmes d’OpenCV permettent d’appliquer divers traitements sur les images pour faciliter la détection d’éléments précis dans celles-ci. Voici quelques exemples :</p>
+        <ul>
+            <li>Le Tresholding (seuillage) d’une image permet de définir une valeur de pixel (correspondant à une couleur) qui servira de seuil. Au-dessus ou en dessous de cette valeur (selon l’agorithme), tous les pixels se verront assigner une autre valeur. Il existe 4 algorithmes de Tresholding.</li>
+            <li>Les filtres de détection de contours d’un objet sur une image (ex: Filtre de Canny)</li>
+            <li>Les filtres de lissage, permettant de réduire le bruit (1) d’une image. Parmi eux, nous avons notamment les filtres par convolution, se basant sur les pixels voisins pour faire une moyenne.</li>
+            <li>Les filtres morphologiques permettant, sur une image binaire (uniquement noire et blanche avec le fond en noir et l’objet sur lequel on effectue le traitement en blanc) d’appliquer une érosion ou dilatation, c’est-à-dire affiner l’objet pour l’érosion et l’élargir pour la dilatation.</li>
+            <p>Il est possible de combiner l’érosion et la dilatation pour la suppression de bruit dans une image. L’application de l’érosion puis dilatation est appelé Opening (Ouverture) et l’application de la dilatation puis de l’érosion est appelé Closing (Fermeture)</p>
+        </ul>
+        <li style="text-shadow:1px 1px 0 #444">Les applications en intelligence artificielle</li>
+        <p>Certains algorithmes d’OpenCV utilisent de l’intelligence artificielle pour faciliter le traitement des images. Dans les faits, cette IA sert à améliorer les algorithmes précédemment détaillés pour obtenir des résultats plus précis.<br>
+            on utilise un filtre de convolution couplé à de l’intelligence artificielle pour obtenir un meilleur résultat que si nous n’avions utilisé que le filtre.
+        </p>
+        <li style="text-shadow:1px 1px 0 #444">Exemple d’utilisation d’OpenCV</li>
+        <p>Dans le cadre d’un projet chez Axopen, OpenCV a été utilisé pour gérer un match de babyfoot en repérant les joueurs ainsi que la balle, avec pour objectif de déterminer les buts et qui les a marqués :</p>
+        <img class="w3-large" src="Css/Imgs/atelier-babyfoot.png" style="width: 35%;">
+        <p>De la même manière, les logiciels d’arbitrage vidéo se basent bien souvent sur OpenCV pour reconnaître les joueurs, déterminer leur équipe et détecter la balle sur le terrain, en se basant sur les couleurs de chaque élément.</p>
+        <p>Plus récemment, c’est aussi OpenCV qui est à la base du logiciel DeepFake, permettant de changer le visage d’une personne par une autre sur une vidéo, qui a fait beaucoup parler de lui ces derniers temps.</p>
+    </ol>
+</div>
+</body>
+</html>

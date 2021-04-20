@@ -1,0 +1,28 @@
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1em;
+    width: 18.75em;
+  }
+
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center
+}
+#titre_central{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+}
+#def1{
+    text-align: center;
+}
